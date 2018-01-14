@@ -1,0 +1,14 @@
+<div class="card">
+    <div *ngIf='flip'>
+        <img [src]='detail.imageFront'>
+    </div>
+    <div *ngIf='!flip'>
+      <img [src]='detail.imageBack'>
+      </div>
+
+    <div>id: {{ detail.id }}</div>
+    <div>year: {{ detail.year }}</div>
+    <div>title: {{ detail.title }}</div>
+    <button (click)=toggleCard()>Button</button>
+    
+</div>
