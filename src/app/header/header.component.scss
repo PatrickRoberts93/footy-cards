@@ -19,11 +19,21 @@ header {
 
 }
 
+img {
+  max-width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 3px solid #FFF;
+  padding-right: 10px;
+}
+
 h1 {
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   font-size: 2.5em;
   color: #FFF;
-  float: left;
+  padding-left: 20px;
 }
 
 
@@ -32,5 +42,10 @@ h1 {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 2em;
+    padding-left: 10px;
+  }
+
+  img {
+    max-width: 70px;
   }
 }
