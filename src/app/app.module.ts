@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { CardCountComponent } from './card-count/card-count.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
     CardComponent,
     CardCountComponent,
     CardDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule

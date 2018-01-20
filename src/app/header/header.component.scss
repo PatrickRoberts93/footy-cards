@@ -6,6 +6,7 @@ header {
 }
 
 .header-inner {
+  position: relative;
   padding: 1.5em 1em 1.3em;
   max-width: $site-width;
   margin: 0 auto;
@@ -36,7 +37,12 @@ h1 {
   padding-left: 20px;
 }
 
-
+app-navbar {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 // MEDIA QUERIES
 @media screen and (max-width: 500px) {
