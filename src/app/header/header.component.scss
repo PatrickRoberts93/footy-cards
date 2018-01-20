@@ -1,0 +1,37 @@
+@import "../../assets/scss/variables";
+
+header {
+  background-color: $theme-color;
+  border-bottom: 5px solid $theme-highlight-color;
+}
+
+.header-inner {
+  padding: 1.5em 1em 1.3em;
+  max-width: $site-width;
+  margin: 0 auto;
+  border-bottom: 5px $theme-color3;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+  color: #FFF;
+  float: left;
+}
+
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
