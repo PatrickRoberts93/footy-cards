@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { CardCountComponent } from './card-count/card-count.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CardDetailComponent } from './card-detail/card-detail.component';
     AppComponent,
     CardComponent,
     CardCountComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
