@@ -37,14 +37,19 @@ h1 {
   padding-left: 20px;
 }
 
-app-navbar {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+
+
 
 // MEDIA QUERIES
+@media screen and (min-width: 901px) {
+  app-navbar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 2em;

@@ -1,12 +1,12 @@
 <nav>
 
-  <div class="menu-burger">
+  <div class="menu-burger" [ngClass]="{'open': !isCollapsed}" (click)="isCollapsed = !isCollapsed">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <ul>
+  <ul [ngClass]="{'open': !isCollapsed}">
     <li><a href="#">Cards</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
