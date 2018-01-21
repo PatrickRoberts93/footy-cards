@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -8,6 +9,8 @@ import { CardCountComponent } from './card-count/card-count.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -17,10 +20,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     CardCountComponent,
     CardDetailComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
