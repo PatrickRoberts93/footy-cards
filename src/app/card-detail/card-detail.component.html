@@ -1,14 +1,16 @@
-<div class="card">
-    <div *ngIf='flip'>
-        <img [src]='detail.imageFront'>
-    </div>
-    <div *ngIf='!flip'>
-      <img [src]='detail.imageBack'>
-      </div>
-
-    <div>id: {{ detail.id }}</div>
-    <div>year: {{ detail.year }}</div>
-    <div>title: {{ detail.title }}</div>
-    <button (click)=toggleCard()>Button</button>
-    
+<div class="card" [ngClass]="{'flipped': !flip}">
+  <div class="flip-container" >
+    <figure class="front">
+        <img [src]='detail.imageFront' (click)=toggleCard()>
+    </figure>
+    <figure class="back">
+      <img [src]='detail.imageBack' (click)=toggleCard()>
+    </figure>
+  </div>
+  <ul class="card-info">
+    <li>Name: <span>{{ detail.name }}</span></li>
+    <li>Team: <span>{{ detail.team }}</span></li>
+    <li>Position: <span>{{ detail.position }}</span></li>
+    <li>Year: <span>{{ detail.year }}</span></li>
+  </ul>
 </div>

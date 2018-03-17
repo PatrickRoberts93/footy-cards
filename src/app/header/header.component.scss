@@ -7,8 +7,7 @@ header {
 
 .header-inner {
   position: relative;
-  padding: 1em;
-  max-width: $site-width;
+  padding: 1em $site-gutter;
   margin: 0 auto;
   border-bottom: 5px $theme-color3;
 
@@ -44,7 +43,7 @@ h1 {
 @media screen and (min-width: 901px) {
   app-navbar {
     position: absolute;
-    right: 0;
+    right: $site-gutter;
     top: 50%;
     transform: translateY(-50%);
   }
