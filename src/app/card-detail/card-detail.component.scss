@@ -1,7 +1,76 @@
 .card {
-    width: 33.33%;
-    float: left;
-    img {
-        width: 100%;
+  perspective: 1000px;
+  width: 100%;
+  height: auto;
+
+  img {
+      width: 100%;
+      box-shadow: 3px 3px 7px 0px  rgba(0,0,0,0.3);
+      transition: all 175ms ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 6px 6px 10px 0px  rgba(0,0,0,0.3);
+
+      }
+
+  }
+
+}
+
+.card-info {
+  margin-top: 0.75em;
+  padding: 0px;
+
+  li {
+    border-bottom: 1px dashed #dedede;
+    padding: 7px;
+    color: #565656;
+
+    &:last-of-type {
+      border-bottom: 0;
     }
+
+    span {
+      float: right;
+    }
+
+  }
+
+}
+
+
+
+////// CARD FLIP ///////
+
+.card.flipped .flip-container {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  	width: 100%;
+  	height: auto;
+  }
+
+.flip-container {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
 }

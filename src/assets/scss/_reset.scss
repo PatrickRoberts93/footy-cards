@@ -12,8 +12,8 @@ html {
   box-sizing: inherit;
 }
 
-// Resets margins and paddings for headers, ul, ol and p
-h1, h2, h3, h4, h5, h6, ul, li, p, blockquote {
+// Resets margins and paddings for headers, ul, ol, p and figure
+h1, h2, h3, h4, h5, h6, ul, li, p, blockquote, figure {
   margin: 0;
   padding: 0;
   line-height: 1;
