@@ -33,7 +33,7 @@ header {
       pointer-events: none;
       position: fixed;
       top: 74px;
-      transform: translateY(-170%);
+      transform: translateY(-155%);
       left: 0;
       right: 0;
       font-size: 2em;
@@ -45,7 +45,7 @@ header {
 }
 
 h1 {
-  transition: all 200ms ease-in-out;
+  transition: all 150ms;
 }
 
 p {

@@ -8,9 +8,11 @@
     right: 0;
     height: 60px;
     background-color: rgba($color: $secondary, $alpha: 0.6);
+    transition: background-color 500ms;
 
     &.fixed {
         position: fixed;
         top: 74px;
+        background-color: rgba($color: $secondary, $alpha: 0.95);
     }
 }
