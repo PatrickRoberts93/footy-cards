@@ -20,24 +20,34 @@ header {
   }
 }
 
-.header-text {
+#header-text {
   position: absolute;
   z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 35%;
   text-align: center;
   width: 100%;
   color: $secondary;
 
-  p {
-    font-size: 1.2em;
+  &.fixed {
+    h1 {
+      pointer-events: none;
+      position: fixed;
+      top: 74px;
+      transform: translateY(-170%);
+      left: 0;
+      right: 0;
+      font-size: 2em;
+    }
+    p {
+      display: none;
+    }
   }
 }
 
+h1 {
+  transition: all 200ms ease-in-out;
+}
 
-// MEDIA QUERIES
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 2em;
-  }
+p {
+  font-size: 1.2em;
 }

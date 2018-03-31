@@ -1,36 +1,7 @@
-// NORMALIZE AND RESET
-@import "/assets/css/normalize";
-@import "/assets/scss/reset";
+@import "/assets/css/normalize"; // NORMALIZE
+@import "/assets/scss/reset"; // RESET
 
-// VARIABLES
-@import "/assets/scss/variables";
+@import "/assets/scss/variables"; // VARIABLES
+@import "/assets/scss/base"; // BASE STYLES
 
-// GOOGLE FONTS API
-@import url('https://fonts.googleapis.com/css?family=Nunito:800|Open+Sans');
-
-
-// BASE STYLES
-body {
-  font-size: 16px;
-  font-family: $body-font;
-  background-color: $secondary;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font;
-}
-
-h1 {
-  font-size: 4em;
-  color: $secondary;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-a {
-  text-decoration: none;
-  color: $link-color;
-
-  &:hover {
-    color: lighten($link-color, 20%);
-  }
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito:800|Open+Sans'); // GOOGLE FONTS API
