@@ -1,15 +1,13 @@
+<img src="../../assets/images/logo-white.svg" alt="Rugby League Cards Logo" class="logo">
 <nav>
-
   <div class="menu-burger" [ngClass]="{'open': !isCollapsed}" (click)="isCollapsed = !isCollapsed">
     <span></span>
     <span></span>
     <span></span>
   </div>
-
   <ul [ngClass]="{'open': !isCollapsed}">
     <li><a routerLink="/">Cards</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/contact">Contact</a></li>
   </ul>
-
 </nav>

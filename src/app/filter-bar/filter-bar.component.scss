@@ -1,0 +1,11 @@
+@import "../../assets/scss/variables";
+
+:host {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba($color: $secondary, $alpha: 0.4)
+}

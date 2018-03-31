@@ -1,10 +1,15 @@
 $site-gutter: 2rem;
 
-$theme-color: #1B1B1B;
-$theme-color2: #806F66;
-$theme-color3: #FFF2BC;
-$theme-highlight-color: #CC0000;
-$bg-color: #F7F7F7;
+$primary: #070707;
+$secondary: #FDFFFC; 
+$tertiary: #2B2D42;
+$highlight: #235789;
+$primary-darker: darken($primary, 5%);
+$secondary-darker: darken($secondary, 5%);
+$tertiary-darker: darken($tertiary, 5%);
+$highlight-darker: darken($highlight, 5%);
 
-$heading-font: 'Catamaran', sans-serif;
-$body-font: 'Roboto', sans-serif;
+$link-color: lighten($highlight, 30%);
+
+$heading-font: 'Nunito', sans-serif;
+$body-font: 'Open Sans', sans-serif;

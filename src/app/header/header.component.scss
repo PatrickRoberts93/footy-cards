@@ -1,61 +1,43 @@
 @import "../../assets/scss/variables";
 
 header {
-  background-color: $theme-color;
-  border-bottom: 5px solid $theme-highlight-color;
-}
-
-.header-inner {
   position: relative;
-  padding: 1em $site-gutter;
-  margin: 0 auto;
-  border-bottom: 5px $theme-color3;
+  height: 400px;
+  background-image: url("/assets/images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
 
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
   }
-
 }
 
-img {
-  max-width: 70px;
-  display: inline-block;
-  vertical-align: middle;
-  border-right: 3px solid #FFF;
-  padding-right: 10px;
+.header-text {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: $secondary;
+
+  p {
+    font-size: 1.2em;
+  }
 }
-
-h1 {
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  color: #FFF;
-  padding-left: 20px;
-}
-
-
 
 
 // MEDIA QUERIES
-@media screen and (min-width: 901px) {
-  app-navbar {
-    position: absolute;
-    right: $site-gutter;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 2em;
-    padding-left: 10px;
-  }
-
-  img {
-    max-width: 50px;
   }
 }
