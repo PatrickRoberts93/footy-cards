@@ -33,6 +33,9 @@ li {
     padding-bottom: .25em;
     color: $secondary;
     
+    &.active:before {
+      width: 100%;
+    }
     &:before {
       content: '';
       position: absolute;
