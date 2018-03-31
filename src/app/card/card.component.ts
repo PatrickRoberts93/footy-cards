@@ -15,24 +15,7 @@ export interface Card {
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
-  animations: [
-
-    trigger('fadeIn', [
-      transition('* => *', [
-
-        query(':enter', style({ opacity: 0 }), {optional: true}),
-
-        query(':enter', stagger('75ms', [
-          animate('300ms ease-in', keyframes([
-            style({opacity: 0, transform: 'translateY(-15%)', offset: 0}),
-            style({opacity: .5, transform: 'translateY(10px)',  offset: 0.3}),
-            style({opacity: 1, transform: 'translateY(0)',     offset: 1.0}),
-          ]))]), {optional: true})
-      ])
-    ])
-
-  ]
+  styleUrls: ['./card.component.scss']
 })
 
 export class CardComponent implements OnInit {

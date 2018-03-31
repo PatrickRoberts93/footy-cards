@@ -27,11 +27,13 @@
 li {
   display: inline-block;
   padding: 1.8em 1.25em;
+  user-select: none;
 
   a {
     position: relative;
     padding-bottom: .25em;
     color: $secondary;
+    outline: none;
     
     &.active:before {
       width: 100%;

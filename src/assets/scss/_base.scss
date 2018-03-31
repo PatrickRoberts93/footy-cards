@@ -6,6 +6,15 @@ body {
     font-family: $body-font;
     background-color: #e6e6e6;
   }
+
+  html {
+    height: 101%;
+    overflow-x: hidden;
+  }
+
+  main {
+    position: relative;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;

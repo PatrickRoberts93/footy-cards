@@ -9,19 +9,10 @@ import { ContactComponent } from '../contact/contact.component';
 
 
 const routes: Routes = [
-        {
-            path: '',
-            component: CardComponent,
-        },
-        {
-            path: 'about',
-            component: AboutComponent,
-        },
-        {
-            path: 'contact',
-            component: ContactComponent,
-        },
-    ];
+    { path: '', component: CardComponent, data: { state: 'card' }  },
+    { path: 'about', component: AboutComponent, data: { state: 'about' } },
+    { path: 'contact', component: ContactComponent, data: { state: 'contact' } }
+  ];
 
 @NgModule({
   imports: [
