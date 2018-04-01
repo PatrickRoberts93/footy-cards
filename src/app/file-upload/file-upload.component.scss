@@ -1,34 +1,49 @@
-:host {
-    flex: 1;
-}
+@import "../../assets/scss/variables";
 
 .dropzone { 
     display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column; 
-    font-weight: 200;
-    height: 300px;
-    border: 2px dashed #f16624;
+    padding: 3em 2em;
+    min-height: 250px;
+    border: 2px dashed #d3d3d3;
     border-radius: 5px;
     background: white;
     margin: 10px 0;
 
     &.hovering {
-        border: 2px solid #f16624;
+        border: 2px solid $highlight;
         color: #dadada !important;
     }
 
-    .file-label {
-        font-size: 1.2em;
+    input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    label {
+        font-family: $heading-font;
+        text-transform: uppercase;
+        background-color: $highlight;
+        padding: 1em 2em;
+        color: $secondary;
+        transition: all 150ms;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $highlight-darker;
+        }
     }
 }
 
-progress::-webkit-progress-value {
-    transition: width 0.1s ease;
-}
-
-img {
-    width: 250px
+progress {
+    width: 100%;
+    &::-webkit-progress-value {
+        transition: width 0.1s ease;
+    }
 }

@@ -2,4 +2,12 @@
 
 :host {
     display: flex;
+    justify-content: space-around;
+    padding: $site-gutter;
+}
+
+file-upload {
+    width: 50%;
+    max-width: 90%;
+    width: 800px;
 }

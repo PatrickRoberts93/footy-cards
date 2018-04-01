@@ -1,6 +1,30 @@
 @import "../../assets/scss/variables";
 
 :host {
-    padding: $site-gutter;
+    margin: $site-gutter;
     display: block;
+}
+
+.user-profile {
+    display: flex;
+    align-content: center;
+
+    .details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    img {
+        border-radius: 50%;
+        margin-right: 3em;
+    }
+
+    h3 {
+        margin-bottom: .4em;
+        font-size: 3em;
+    }
+
+    span {
+        font-size: 1.25em;
+    }
 }

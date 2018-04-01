@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
+import { CoreModule } from './core/core.module';
 
 export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -24,6 +25,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FileSizePipe } from './file-size.pipe';
 import { AddCardComponent } from './add-card/add-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthGuard } from './core/auth.guard';
 
 
 @NgModule({
@@ -49,10 +51,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
-    AngularFireStorageModule
-
+    AngularFireStorageModule,
+    CoreModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

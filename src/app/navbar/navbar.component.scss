@@ -33,6 +33,7 @@ li {
     position: relative;
     padding-bottom: .25em;
     color: $secondary;
+    cursor: pointer;
     outline: none;
     
     &.active:before {
@@ -41,6 +42,7 @@ li {
     &:before {
       content: '';
       position: absolute;
+      left: 0;
       bottom: 0;
       border: 0;
       height: 1px;
@@ -54,4 +56,63 @@ li {
     }
   }
 
+  &.account-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.8em;
+    overflow: hidden;
+    padding: 0;
+    transition: all 150ms;
+    
+
+    a {
+      display: inline-block;
+      text-align: center;
+      opacity: 0;
+      width: 90px;
+      padding: 2.6em 0 1em 0;
+      transition: all 150ms;
+    }
+
+    &:hover {
+      background-size: 1.5em;
+      background-position: center 10px;
+
+      a {
+        opacity: 1;;
+      }
+    }
+
+    &.dashboard { background-image: url('/assets/images/icon-profile.svg'); }
+    &.add-cards { background-image: url('/assets/images/icon-add-cards.svg'); }
+    &.logout { background-image: url('/assets/images/icon-logout.svg'); }
+    &.google-login button {
+      font-family: 'Roboto', sans-serif;
+      background-color: #FFF;
+      padding: 8px 24px 8px 42px;
+      color: rgb(121, 121, 121);
+      font-size: 0.875em;
+      text-transform: uppercase;
+      background-image: url('/assets/images/header/logo-google.png');
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position: 8px center;
+      border-radius: 2px;
+      &:hover { opacity: 0.9; }
+      &:active { opacity: 0.8; }
+    }
+    
+    }
+  }
+
+
+.account {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  span {
+    color: $secondary;
+    margin-right: 1em;
+  }
 }

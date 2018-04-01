@@ -8,6 +8,7 @@
       box-shadow: 3px 3px 7px 0px  rgba(0,0,0,0.3);
       transition: all 175ms ease-in-out;
       cursor: pointer;
+      user-select: none;
 
       &:hover {
         transform: scale(1.02);

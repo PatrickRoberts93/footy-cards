@@ -1,13 +1,35 @@
+
 <img src="../../assets/images/logo-white.svg" alt="Rugby League Cards Logo" class="logo">
+
 <nav>
-  <div class="menu-burger" [ngClass]="{'open': !isCollapsed}" (click)="isCollapsed = !isCollapsed">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul [ngClass]="{'open': !isCollapsed}">
+  <ul>
     <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Cards</a></li>
     <li><a routerLink="/about" routerLinkActive="active">About</a></li>
     <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
   </ul>
 </nav>
+
+<div *ngIf="auth.user | async; then authenticated else guest"></div>
+
+<!-- User NOT logged in -->
+<ng-template #guest>
+    <div class="account">
+        <ul>
+          <li class='account-link google-login'><button (click)="auth.googleLogin()">Sign in with google</button></li>
+        </ul>
+      </div>
+</ng-template>
+
+<!-- IF LOGGED IN -->
+<ng-template #authenticated>
+  <div class="account">
+    <span *ngIf="auth.user | async as user">Howdy, {{ user.displayName }}</span>
+    <nav>
+      <ul>
+          <li class='account-link dashboard'><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+          <li class='account-link add-cards'><a routerLink="/add-card" routerLinkActive="active">Add Cards</a></li>
+          <li class='account-link logout'><a (click)="auth.signOut()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</ng-template>
