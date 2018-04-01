@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 
 export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
@@ -18,6 +19,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FilterBarComponent } from './filter-bar/filter-bar.component';
+import { DropZoneDirective } from './drop-zone.directive';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { FileSizePipe } from './file-size.pipe';
+import { AddCardComponent } from './add-card/add-card.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -30,14 +36,21 @@ import { FilterBarComponent } from './filter-bar/filter-bar.component';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    FilterBarComponent
+    FilterBarComponent,
+    DropZoneDirective,
+    FileUploadComponent,
+    FileSizePipe,
+    AddCardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireStorageModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

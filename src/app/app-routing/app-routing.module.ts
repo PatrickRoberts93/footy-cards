@@ -6,12 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from '../card/card.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 
 const routes: Routes = [
     { path: '', component: CardComponent, data: { state: 'card' }  },
     { path: 'about', component: AboutComponent, data: { state: 'about' } },
-    { path: 'contact', component: ContactComponent, data: { state: 'contact' } }
+    { path: 'contact', component: ContactComponent, data: { state: 'contact' } },
+    { path: 'dashboard', component: DashboardComponent, data: { state: 'dashboard' } }
   ];
 
 @NgModule({
