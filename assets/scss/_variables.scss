@@ -1,0 +1,15 @@
+$site-gutter: 2rem;
+
+$primary: #070707;
+$secondary: #FFF; 
+$tertiary: #2B2D42;
+$highlight: #235789;
+$primary-darker: darken($primary, 10%);
+$secondary-darker: darken($secondary, 10%);
+$tertiary-darker: darken($tertiary, 10%);
+$highlight-darker: darken($highlight, 10%);
+
+$link-color: lighten($highlight, 30%);
+
+$heading-font: 'Nunito', sans-serif;
+$body-font: 'Open Sans', sans-serif;

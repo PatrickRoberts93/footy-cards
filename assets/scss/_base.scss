@@ -1,0 +1,68 @@
+@import "variables";
+
+// BASE STYLES
+body {
+    font-size: 16px;
+    font-family: $body-font;
+    background-color: #e6e6e6;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  main {
+    position: relative;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 4em;
+    color: $secondary;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 3em;
+  }
+
+  a {
+    text-decoration: none;
+    color: $link-color;
+  
+    &:hover {
+      color: lighten($link-color, 20%);
+    }
+  }
+
+  p {
+    line-height: 1.2;
+  }
+
+
+
+
+
+  // @media screen and (max-width: 1000px) {
+  //   #header-text.fixed h1 {
+  //     position: absolute;
+  //     left: inherit;
+  //     right: $site-gutter;
+  //   }
+  // }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.6em;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 1.75em;
+    }
+  } 
