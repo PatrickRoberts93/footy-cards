@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SearchPipe } from './search.pipe';
+import { StickyDirective } from './sticky.directive';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SearchPipe } from './search.pipe';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    SearchPipe
+    SearchPipe,
+    StickyDirective
   ],
   imports: [
     BrowserModule,

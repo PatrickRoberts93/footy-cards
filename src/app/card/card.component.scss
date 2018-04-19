@@ -29,9 +29,7 @@
   transition: background-color 500ms;
 
   &.fixed {
-      position: fixed;
-      top: 74px;
-      background-color: rgba($color: $secondary, $alpha: 0.95);
+    background-color: rgba($color: $secondary, $alpha: 0.95);
   }
 
   input {
@@ -39,6 +37,7 @@
     width: 800px;
     max-width: 90%;
     margin: 0 auto;
+    border: 1px solid $secondary-darker;
     font-size: 1.25em;
     padding: 0.5em 1em;
     border-radius: 20px;

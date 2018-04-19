@@ -1,4 +1,4 @@
-<div id="search-bar">
+<div app-sticky [offSet]="74" [addClass]="'fixed'" id="search-bar">
     <input type="text" [(ngModel)]="queryString" placeholder="Search by player, team or position or year...">
 </div>
 <div class="card-list">
