@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CardComponent } from './card.component';
+import { CardDetailComponent } from '../card-detail/card-detail.component';
+import { SearchPipe } from '../search.pipe';
+import { StickyDirective } from '../sticky.directive';
+import { FormsModule } from '@angular/forms';
+
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -8,7 +13,13 @@ describe('CardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
+      declarations: [ CardComponent,
+      SearchPipe,
+      CardDetailComponent,
+    StickyDirective ],
+    imports: [
+      FormsModule
+    ]
     })
     .compileComponents();
   }));

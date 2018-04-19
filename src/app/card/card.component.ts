@@ -29,8 +29,8 @@ export class CardComponent implements OnInit {
       team: 'Bulldogs',
       position: 'Wing',
       year: 2004,
-        imageFront: 'http://www.diggaztradingcards.com.au/wp-content/uploads/2015/07/img0121.jpg',
-        imageBack: 'https://cdn.shopify.com/s/files/1/0184/9092/products/2015_Elite_Bulldogs_1024x1024.jpg?v=1438878720',
+        imageFront: '../../assets/images/cards/hazemelmasri_front.jpg',
+        imageBack: '../../assets/images/cards/card_back.jpg',
 
 
     }, {
@@ -39,8 +39,8 @@ export class CardComponent implements OnInit {
       team: 'Bulldogs',
       position: 'Five-eighth',
       year: 1988,
-        imageFront: 'https://i.ebayimg.com/thumbs/images/g/8PIAAOSwXxhaBqkx/s-l225.jpg',
-        imageBack: 'https://i.ebayimg.com/images/g/0moAAOSw~HBaBqm~/s-l500.jpg',
+        imageFront: '../../assets/images/cards/terrylamb_front.jpg',
+        imageBack: '../../assets/images/cards/terrylamb_back.jpg',
     },
     {
      id: 3,
@@ -48,8 +48,8 @@ export class CardComponent implements OnInit {
      team: 'Storm',
      position: 'Hooker',
      year: 2016,
-       imageFront: '../../assets/images/cards/camsmith_front.png',
-       imageBack: '../../assets/images/cards/camsmith_back.png',
+       imageFront: '../../assets/images/cards/camsmith_front.jpg',
+       imageBack: '../../assets/images/cards/camsmith_back.jpg',
    }
  ]
   }
