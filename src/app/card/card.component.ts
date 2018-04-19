@@ -12,6 +12,7 @@ export interface Card {
   imageBack: string;
 }
 
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -19,6 +20,9 @@ export interface Card {
 })
 
 export class CardComponent implements OnInit {
+
+  queryString: string = '';
+
   @Input()
   cards: Card[];
   constructor() {}
