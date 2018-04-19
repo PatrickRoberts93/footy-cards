@@ -1,6 +1,6 @@
+<div id="search-bar">
+    <input type="text" [(ngModel)]="queryString" placeholder="Search by player, team or position or year...">
+</div>
 <div class="card-list">
-  <app-card-detail *ngFor="let card of cards" [detail]="card"></app-card-detail>
-  <app-card-detail *ngFor="let card of cards" [detail]="card"></app-card-detail>
-  <app-card-detail *ngFor="let card of cards" [detail]="card"></app-card-detail>
-  <app-card-detail *ngFor="let card of cards" [detail]="card"></app-card-detail>
+  <app-card-detail *ngFor="let card of cards | search: queryString : 'name'" [detail]="card"></app-card-detail>
 </div>

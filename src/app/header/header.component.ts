@@ -14,8 +14,7 @@ export class HeaderComponent implements OnInit {
     onWindowScroll(){
       let scrollPos = document.scrollingElement.scrollTop + 74,
           header = document.getElementById("header"),
-          headerText = document.getElementById("header-text"),
-          filterBar = document.getElementById("filter-bar");
+          headerText = document.getElementById("header-text");
 
       // PAGE TITLE
       if (headerText.offsetTop < scrollPos) {
@@ -25,11 +24,11 @@ export class HeaderComponent implements OnInit {
       }
 
       // FILTER BAR
-      if ((header.offsetHeight - filterBar.offsetHeight) < scrollPos) {
-        filterBar.classList.add('fixed');
-      } else {
-        filterBar.classList.remove('fixed');
-      }
+      // if ((header.offsetHeight - filterBar.offsetHeight) < scrollPos) {
+      //   filterBar.classList.add('fixed');
+      // } else {
+      //   filterBar.classList.remove('fixed');
+      // }
     }
 
   ngOnInit() {
