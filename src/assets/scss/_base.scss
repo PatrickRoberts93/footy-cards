@@ -17,14 +17,19 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
+    margin-bottom: 0.5em;
   }
   
   h1 {
     font-size: 4em;
     color: $secondary;
-    margin-bottom: 0.5em;
     text-transform: uppercase;
   }
+  
+  h2 {
+    font-size: 3em;
+  }
+
   a {
     text-decoration: none;
     color: $link-color;
@@ -32,4 +37,8 @@ body {
     &:hover {
       color: lighten($link-color, 20%);
     }
+  }
+
+  p {
+    line-height: 1.2;
   }

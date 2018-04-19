@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+
+:host {
+    position: relative;
+    display: block;
+    padding: $site-gutter;
+    text-align: center;
+  }
+
+  .description {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+.planned-features {
+    margin: 2em 0;
+
+    ul li{
+        margin-bottom: 10px;
+    }
+}
+
+.contact-details {
+    margin-bottom: 1em;
+}
