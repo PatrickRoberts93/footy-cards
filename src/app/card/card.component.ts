@@ -55,7 +55,34 @@ export class CardComponent implements OnInit {
      year: 2016,
        imageFront: environment.imgSrc + '/assets/images/cards/camsmith_front.jpg',
        imageBack: environment.imgSrc + '/assets/images/cards/camsmith_back.jpg',
-   }
+   },
+   {
+    id: 4,
+    name: 'Jason Alchin',
+    team: 'Bulldogs',
+    position: 'Fullback',
+    year: 1990,
+      imageFront: environment.imgSrc + '/assets/images/cards/jasonalchin_front.jpg',
+      imageBack: environment.imgSrc + '/assets/images/cards/jasonalchin_back.jpg',
+  },
+  {
+    id: 4,
+    name: 'Terry Lamb',
+    team: 'Bulldogs',
+    position: 'Five-eigth',
+    year: 1990,
+      imageFront: environment.imgSrc + '/assets/images/cards/terrylamb90_front.jpg',
+      imageBack: environment.imgSrc + '/assets/images/cards/terrylamb90_back.jpg',
+  },
+  {
+    id: 4,
+    name: 'Paul Langmack',
+    team: 'Bulldogs',
+    position: 'Lock',
+    year: 1990,
+      imageFront: environment.imgSrc + '/assets/images/cards/paullangmack90_front.jpg',
+      imageBack: environment.imgSrc + '/assets/images/cards/paullangmack90_back.jpg',
+  }
  ]
   }
 }
