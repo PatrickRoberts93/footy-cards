@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Input } from '@angular/core';
 import { Output } from '@angular/core/src/metadata/directives';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
+import { environment } from '../../environments/environment';
 
 export interface Card {
   id: number;
@@ -33,8 +34,8 @@ export class CardComponent implements OnInit {
       team: 'Bulldogs',
       position: 'Wing',
       year: 2004,
-        imageFront: '../../assets/images/cards/hazemelmasri_front.jpg',
-        imageBack: '../../assets/images/cards/card_back.jpg',
+        imageFront: environment.imgSrc + '/assets/images/cards/hazemelmasri_front.jpg',
+        imageBack: environment.imgSrc + '/assets/images/cards/card_back.jpg',
 
 
     }, {
@@ -43,8 +44,8 @@ export class CardComponent implements OnInit {
       team: 'Bulldogs',
       position: 'Five-eighth',
       year: 1988,
-        imageFront: '../../assets/images/cards/terrylamb_front.jpg',
-        imageBack: '../../assets/images/cards/terrylamb_back.jpg',
+        imageFront: environment.imgSrc + '/assets/images/cards/terrylamb_front.jpg',
+        imageBack: environment.imgSrc + '/assets/images/cards/terrylamb_back.jpg',
     },
     {
      id: 3,
@@ -52,8 +53,8 @@ export class CardComponent implements OnInit {
      team: 'Storm',
      position: 'Hooker',
      year: 2016,
-       imageFront: '../../assets/images/cards/camsmith_front.jpg',
-       imageBack: '../../assets/images/cards/camsmith_back.jpg',
+       imageFront: environment.imgSrc + '/assets/images/cards/camsmith_front.jpg',
+       imageBack: environment.imgSrc + '/assets/images/cards/camsmith_back.jpg',
    }
  ]
   }
